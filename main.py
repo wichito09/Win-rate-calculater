@@ -1,6 +1,7 @@
 import calculations
 import time
 import sys
+import requests
 
 VERSION = '0.0.1'
 
@@ -8,7 +9,14 @@ VERSION = '0.0.1'
 def greet():
     '''greets the user, like a logo and a message and Version'''
 
-    print('add logo here')
+    print(r''' /$$      /$$ /$$           /$$                  /$$$$$$   /$$$$$$ 
+| $$  /$ | $$|__/          | $$                 /$$$_  $$ /$$__  $$
+| $$ /$$$| $$ /$$  /$$$$$$$| $$$$$$$   /$$$$$$ | $$$$\ $$| $$  \ $$
+| $$/$$ $$ $$| $$ /$$_____/| $$__  $$ /$$__  $$| $$ $$ $$|  $$$$$$$
+| $$$$_  $$$$| $$| $$      | $$  \ $$| $$  \ $$| $$\ $$$$ \____  $$
+| $$$/ \  $$$| $$| $$      | $$  | $$| $$  | $$| $$ \ $$$ /$$  \ $$
+| $$/   \  $$| $$|  $$$$$$$| $$  | $$|  $$$$$$/|  $$$$$$/|  $$$$$$/
+|__/     \__/|__/ \_______/|__/  |__/ \______/  \______/  \______/ ''')
     print(VERSION)
     print("This is a calculator that will calculate your win percentage")
     print('the program will not check for any problems till the end so if you put a letter it will repeat till the end')
